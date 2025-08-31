@@ -5,18 +5,32 @@
 }
 
 body {
-  background-color: #eafbff;
-  background-image: linear-gradient(
-    to bottom,
-    #eafbff 0%,
-    #eafbff 50%,
-    #5290f9 50%,
-    #5290f9 100%
-  );
+  background-color: #8e44ad;
   font-family: "Rubik", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   margin: 0;
+  overflow: hidden;
+  color: #fff;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 50px;
+}
+
+.counter {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+@media (max-width: 580px) {
+  body {
+    flex-direction: column;
+  }
 }
